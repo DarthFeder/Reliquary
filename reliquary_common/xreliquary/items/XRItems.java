@@ -123,10 +123,12 @@ public class XRItems {
 		LanguageRegistry.addName(potion(PotionData.CELERITY_META), Names.CELERITY_NAME);
 		LanguageRegistry.addName(potion(PotionData.PANACEA_META), Names.PANACEA_NAME);
 		LanguageRegistry.addName(potion(PotionData.WATER_META), Names.WATER_NAME);
-		LanguageRegistry.addName(mercyCross, Names.CROSS_LOCAL);
-		LanguageRegistry.addName(holyHandGrenade, Names.GRENADE_LOCAL);
-		LanguageRegistry.addName(fortuneCoin, Names.FORTUNE_COIN_LOCAL);
-		LanguageRegistry.addName(glowingWater, Names.GLOWING_WATER_LOCAL);
+		
+		//LanguageRegistry.addName(mercyCross, Names.CROSS_LOCAL);
+		//LanguageRegistry.addName(holyHandGrenade, Names.GRENADE_LOCAL);
+		//LanguageRegistry.addName(fortuneCoin, Names.FORTUNE_COIN_LOCAL);
+		//LanguageRegistry.addName(glowingWater, Names.GLOWING_WATER_LOCAL);
+		
 		LanguageRegistry.addName(gunPart(0), Names.GUNPART_0_LOCAL);
 		LanguageRegistry.addName(gunPart(1), Names.GUNPART_1_LOCAL);
 		LanguageRegistry.addName(gunPart(2), Names.GUNPART_2_LOCAL);

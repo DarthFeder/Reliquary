@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>English (en_US) Localization File</comment>
+	
+	<entry key="item.mercyCross.name">Cross of Mercy</entry>
+	<entry key="item.holyHandGrenade.name">Holy Hand Grenade</entry>
+	<entry key="item.fortuneCoin.name">Coin of Fortune</entry>
+	<entry key="item.glowWater.name">Glowing Water</entry>
+
+	
+	<entry key="tile.altarActive.name">Altar of Light</entry>
+	<entry key="tile.altarIdle.name">Altar of Light</entry>
+	<entry key="tile.lilypad.name">Lilypad of Fertility</entry>
+	<entry key="tile.wraithNode.name">Wraith Node</entry>
+	
+	<entry key="itemGroup.xreliquary">Xeno's Reliquary</entry>
+</properties>

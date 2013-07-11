@@ -9,7 +9,6 @@ import xreliquary.items.XRItems;
 import xreliquary.lib.Names;
 import xreliquary.lib.PotionData;
 import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class XRBlocks {
 	public static Block altarActive;
@@ -22,10 +21,12 @@ public class XRBlocks {
 		altarIdle = new BlockAltar(Config.altarIdleID, false);
 		lilypad = new BlockFertileLilypad(Config.lilypadID);
 		wraithNode = new BlockWraithNode(Config.wraithNodeID);
-		LanguageRegistry.addName(altarActive, Names.ALTAR_LOCAL);
-		LanguageRegistry.addName(altarIdle, Names.ALTAR_LOCAL);
-		LanguageRegistry.addName(lilypad, Names.LILYPAD_LOCAL);
-		LanguageRegistry.addName(wraithNode, Names.WRAITHNODE_LOCAL);
+		
+		//LanguageRegistry.addName(altarActive, Names.ALTAR_LOCAL);
+		//LanguageRegistry.addName(altarIdle, Names.ALTAR_LOCAL);
+		//LanguageRegistry.addName(lilypad, Names.LILYPAD_LOCAL);
+		//LanguageRegistry.addName(wraithNode, Names.WRAITHNODE_LOCAL);
+		
 		GameRegistry.registerBlock(altarActive, Names.ALTAR_ACTIVE_NAME);
 		GameRegistry.registerBlock(altarIdle, Names.ALTAR_IDLE_NAME);
 		GameRegistry.registerBlock(lilypad, ItemFertileLilypad.class, Names.LILYPAD_NAME);

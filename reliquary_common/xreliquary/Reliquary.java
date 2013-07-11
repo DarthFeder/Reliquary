@@ -5,6 +5,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import xreliquary.blocks.XRBlocks;
 import xreliquary.common.CommonProxy;
+import xreliquary.common.LocalizationHandler;
 import xreliquary.items.AlkahestMap;
 import xreliquary.items.XRAlkahestry;
 import xreliquary.items.XRItems;
@@ -22,7 +23,6 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import cpw.mods.fml.common.network.NetworkMod;
-import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
@@ -42,6 +42,7 @@ public class Reliquary {
 	public void preInit(FMLPreInitializationEvent event) {
 		// Initialize the log helper
 		LogHelper.init();
+		LocalizationHandler.loadLanguagesIntoRegistry();
 		Config.init(event.getSuggestedConfigurationFile());
 		proxy.registerSoundHandler();
 		proxy.registerTickHandlers();
@@ -58,7 +59,7 @@ public class Reliquary {
 		proxy.registerRenderers();
 		proxy.registerEvents();
 		proxy.registerTileEntities();
-		LanguageRegistry.instance().addStringLocalization("itemGroup." + Reference.MOD_ID, "Xeno's Reliquary");
+		//LanguageRegistry.instance().addStringLocalization("itemGroup." + Reference.MOD_ID, "Xeno's Reliquary");
 	}
 
 	@PostInit
